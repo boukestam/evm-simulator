@@ -1,0 +1,212 @@
+.layout {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  flex: 0 0 80px;  
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.topbar-title {
+  font-size: 32px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+}
+
+.sidebar {
+  margin: 20px;
+  flex: 0 0 300px;
+  background: white;
+  border-radius: 5px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  font-weight: bold;
+  margin: 20px 0px;
+}
+
+.sidebar-colors {
+
+}
+
+.sidebar-color {
+  display: inline-block;
+  margin: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sidebar-option {
+  cursor: pointer;
+}
+
+.sidebar-option:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.sidebar-option:hover {
+  font-weight: bold;
+}
+
+.nft-container {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+}
+
+.nft-list {
+  padding: 20px;
+}
+
+.nft {
+  display: inline-block;
+  width: 300px;
+  margin: 0 40px 40px 0;
+  text-align: left;
+  background: white;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+  
+  /* this fixes the overflow:hidden in Chrome */
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+}
+
+.nft:hover {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -webkit-mask-image: none;
+}
+
+.nft-preview {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.nft-shirt {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: -50px;
+  top: -50px;
+}
+
+.nft-image {
+  position: absolute;
+  height: auto;
+  opacity: 0.95;
+}
+
+.nft-name {
+  font-weight: bold;
+  padding: 10px 10px 0px 10px;
+}
+
+.nft-price {
+  color: gray;
+  padding: 10px;
+}
+
+.nft-details {
+  background: #fff;
+  flex: 1;
+  margin: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 40px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.nft-details .nft-preview {
+  width: 600px;
+  height: 600px;
+  margin-right: 40px;
+}
+
+.nft-details .nft-shirt {
+  width: 800px;
+  height: 800px;
+  left: -100px;
+  top: -100px;
+}
+
+.nft-details-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nft-details-header {
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.nft-details-size-list {
+  display: flex;
+}
+
+.nft-details-size {
+  width: 40px;
+  height: 40px;
+  border: 1px dashed #bbb;
+  color: #bbb;
+  border-radius: 3px;
+  margin-right: 10px;
+  font-weight: bold;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nft-details-size-available {
+  border-style: solid;
+  cursor: pointer;
+  color: black;
+}
+
+.nft-details-size-available:hover {
+  background: #eee;
+}
+
+.nft-details-size-active {
+  border: 2px solid black;
+}
+
+.nft-details-price {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.nft-details-buy {
+  background-color: rgb(232, 0, 111);
+  color: white;
+  padding: 16px;
+  border-radius: 5px;
+  display :flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.nft-details-buy:hover {
+  background: rgb(207, 0, 99);
+}
